@@ -1,4 +1,4 @@
-package w.m.vker.dmeo.orderserver;
+package w.m.vker.demo.orderserver;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

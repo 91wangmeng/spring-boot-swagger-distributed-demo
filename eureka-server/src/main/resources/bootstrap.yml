@@ -1,0 +1,28 @@
+##  服务端口
+server:
+  port: 8080
+##  服务名称
+spring:
+  application:
+    name: eureka-server
+##  eureka配置
+eureka:
+  server:
+    enable-self-preservation: false
+  client:
+    register-with-eureka: true
+    fetch-registry: false
+    service-url:
+       defaultZone:   http://localhost:${server.port}/eureka/
+##  日志
+logging:
+  level:
+    root: info
+    com:
+      netflix:
+        eureka: 'off'
+        discovery:  'off'
+## 关闭管理类接口的安全认证
+management:
+  security:
+    enabled: false
