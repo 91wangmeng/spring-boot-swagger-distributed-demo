@@ -6,5 +6,7 @@ zuul:
       path: /order/**
   host:
     connect-timeout-millis: 10000
-    socket-timeout-millis: 60000
-  ribbon-isolation-strategy: thread
+    socket-timeout-millis: 10000
+ribbon:
+  ReadTimeout:  10000
+  ConnectTimeout: 10000

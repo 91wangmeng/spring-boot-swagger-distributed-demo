@@ -2,8 +2,10 @@ package w.m.vker.demo.orderserver.controller;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+import springfox.documentation.builders.ResponseMessageBuilder;
+import springfox.documentation.service.ResponseMessage;
 
 /**
  * 浙江卓锐科技股份有限公司 版权所有 © Copyright 2017<br>
@@ -15,9 +17,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @Api(tags = "订单系统接口", description = "订单系统模块相关接口")
 public class OrderServerController {
-    @PostMapping("/orderSomething")
+    @GetMapping("/orderSomething")
     @ApiOperation(value = "下单")
-    public String pay() {
-        return "订单接口demo";
+    public ResponseMessage order() {
+        return new ResponseMessageBuilder().code(200).message("下单成功").build();
     }
 }

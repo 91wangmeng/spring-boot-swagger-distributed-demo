@@ -20,6 +20,7 @@ logging:
       netflix:
         eureka: 'off'
         discovery:  'off'
+
 ## 关闭管理类接口的安全认证
 management:
   security:
