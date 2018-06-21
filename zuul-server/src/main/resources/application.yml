@@ -1,6 +1,6 @@
 zuul:
   routes:
-    payment-server:
+    pay-server:
       path: /pay/**
     order-server:
       path: /order/**
