@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>w.m.vker.demo</groupId>
-    <artifactId>swagger-distributed-demo</artifactId>
+    <artifactId>spring-boot-swagger-distributed-demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
@@ -16,7 +16,7 @@
         <module>eureka-server</module>
         <module>pay-server</module>
     </modules>
-    <name>swagger-distributed-demo</name>
+    <name>spring-boot-swagger-distributed-demo</name>
     <description>Demo project for Spring Boot</description>
 
     <parent>
