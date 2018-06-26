@@ -13,7 +13,7 @@
 
     <parent>
         <groupId>w.m.vker.demo</groupId>
-        <artifactId>swagger-distributed-demo</artifactId>
+        <artifactId>spring-boot-swagger-distributed-demo</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
